@@ -1,0 +1,47 @@
+/**index.wxss**/
+page{
+  background-color: #4491F9;
+}
+.bg-top{
+  width: 100%;
+  height:700rpx;
+  background: url(https://mobile.sxwinstar.net/wechat/static/images/bg-top@2x.png) center center no-repeat;
+  background-size:contain;
+}
+.jt-full-padding{
+  padding: 0 70rpx;
+}
+.jt-full-padding li{
+  display: block;
+}
+.jt-full-padding text{
+  float: right;
+}
+.input-height{
+   height: 88rpx;
+   background: #fff;
+   border-radius: 5px;
+}
+.font-margin{
+  padding: 20rpx 0 30rpx;
+  font-size: 26rpx;
+  font-weight:600;
+  color: #fff;
+  
+}
+.jt-btn-primary{
+  color: #fff;
+  background:#3AD3CD url(https://mobile.sxwinstar.net/wechat/static/images/search@2x.png) 25% center no-repeat;
+  background-size: 7%;
+}
+.bg-bottom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height:90rpx;
+  background: url(https://mobile.sxwinstar.net/wechat/static/images/bg-bottom@2x.png) center bottom no-repeat;
+  background-size:contain;
+  font-size: 24rpx;
+  color: #fff;
+}
+

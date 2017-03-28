@@ -1,0 +1,26 @@
+/* pages/UnionPay/UnionPay.wxss */
+.UnionHeader{
+   height: 90rpx;
+   line-height: 90rpx;
+   background: #5BA3DA;
+}
+.UnionHac{
+    margin-left: 150rpx;
+}
+.Unioncontent{
+   padding: 40rpx 5%;
+}
+.Unioncontent view{
+   height: 70rpx; 
+   line-height: 70rpx;
+}
+.UnionIp{
+   display: flex;
+   flex-direction: row;
+   height: 100rpx;
+   line-height: 100rpx;
+}
+.UnionIp input{
+   height: 100rpx;
+   line-height: 100rpx;
+}

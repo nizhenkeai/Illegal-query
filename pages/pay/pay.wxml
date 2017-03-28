@@ -1,0 +1,9 @@
+<!--pages/pay/pay.wxml-->
+<view class="payContent">
+   <view class="ac price"><text>￥200.00</text></view>
+   <view><text>违法条数</text><text class="fr">2条</text></view>
+   <view><text>违法金额</text><text class="fr">200元</text></view>
+</view>
+<view class="payWay padding-LaR">选择支付方式</view>
+<view class="payUnionPay padding-LaR"><text>中国银联</text><icon bindtap="pIChange" class="payIcon fr"  type="{{status ? 'success' : 'circle'}}" size="25"/></view>
+<button class="footerBtn" disabled="{{!status}}" bindtap="pBtnEve">{{payBtnText}}</button>

@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="bg-top"></view>
+<view class="jt-full-padding">
+    <ul>  <!--610303198502110417--    aws196-----------A870HW -->
+        <li><input id="sx-driving-number" value="{{inputValue}}" class="input-height ac" type="text" placeholder="请输入证件号码或车牌号码" required="required" bindinput="chengeValue"/></li>
+        <li class="font-margin">仅支付陕西省内交警机关（含各业务平台）裁决的交通违法在线缴纳罚款
+          <text bindtap="richScan">扫一扫</text>
+        </li>
+        <li><button class="jt-btn-primary" bindtap="bindViewTap">查询并缴费</button></li>
+    </ul>
+</view>
+<view class="bg-bottom ac">陕西省公安厅交警总队  版权所有</view>

@@ -1,0 +1,25 @@
+
+<!--pages/indent/indent.wxml-->
+<view class="identHeader">
+  <icon type="success" color="white"></icon>
+  <text class="identWhite">交易成功</text>
+</view>
+<view class="identSection">
+  <view>
+    <image src="../../dist/images/zhuangtai.png"></image>
+    <text>违法车辆：</text>
+    <text class="fr">陕A11111</text>
+  </view>
+  <view>
+    <image src="../../dist/images/wei.png"></image>
+    <text>本次条数处理：</text>
+    <text class="fr">2条</text>
+  </view>
+  <view class="identBor">
+    <image src="../../dist/images/money.png"></image>
+    <text>本次滞纳金额：</text>
+    <text class="orange fr">￥200</text>
+  </view>
+   <view class="orange identBottom">支付状态：支付成功</view>
+   <view class="orange identBottom">订单状态：处理成功</view>
+</view>

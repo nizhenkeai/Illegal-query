@@ -1,0 +1,19 @@
+
+<!--pages/UnionPay/UnionPay.wxml-->
+<view class="padding-LaR UnionHeader mgBotto">
+  <text class="fl">中文</text>
+  <text class="UnionHac">订单支付</text>
+  <text class="fr">在线支付</text>
+</view>
+<view class="padding-LaR bgwhite mgBottom Unioncontent">
+  <view><text>订单号码：</text><text>**************</text></view>
+  <view><text>订单金额：</text><text>200.00元</text></view>
+  <view><text>商户名称：</text><text>交通违法缴费</text></view>
+</view>
+<view class="padding-LaR bgwhite mgBottom UnionIp">
+  <lable>银联号码：</lable><input placeholder="信用卡/储蓄卡/中银通卡" />
+</view>
+<view class="padding-LaR bgwhite UnionIp">
+  <text>支付密码：</text><input class="fr" placeholder="请输入您的支付密码" />
+</view>
+<button class="footerBtn" bindtap="UnionBtn">确认付款</button>

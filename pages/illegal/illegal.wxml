@@ -1,0 +1,69 @@
+
+<!--pages/illegal/illegal.wxml-->
+<view class="header">
+  <view class="border">
+    <text class="acolor">{{untreated}}条</text>
+    <text>未处理</text>
+  </view>
+  <view class="border">
+    <text class="acolor">{{dockPoints}}分</text>
+    <text>扣分</text>
+  </view>
+  <view>
+    <text class="acolor">{{penaltyAmount}}元</text>
+    <text>罚金</text>
+  </view>
+</view>
+<block wx:if="{{illegalDetails.length>0}}">
+  <view class="details_section">
+    <checkbox-group bindchange="checkboxChange" data-index="{{index}}">
+      <view wx:for="{{illegalDetails}}">
+        <checkbox value="{{item.id}}" checked="{{check}}" disabled="{{checkDisabled}}" />
+        <view class="section">
+          <view>
+            <image src="../../dist/images/times.png"></image>
+            <text>违法时间：</text>
+            <text>{{item.createdAt}}</text>
+          </view>
+          <view>
+            <image src="../../dist/images/wei.png"></image>
+            <text>违法详情：</text>
+            <text>{{item.action}}</text>
+          </view>
+          <view>
+            <image src="../../dist/images/position.png"></image>
+            <text>违法地点：</text>
+            <text>{{item.place}}</text>
+          </view>
+          <view class="section_row">
+            <image src="../../dist/images/money.png"></image>
+            <view class="se_row">
+              <text>扣分：</text>
+              <text class="orange">{{item.dockPoints}}</text>
+            </view>
+            <view class="se_row">
+              <text>罚金：</text>
+              <text class="orange">{{item.penaltyAmount}}</text>
+            </view>
+            <view class="se_row">
+              <text>滞纳金：</text>
+              <text class="orange">{{item.leeFee}}</text>
+            </view>
+          </view>
+          <view>
+            <image src="../../dist/images/zhuangtai.png"></image>
+            <text>违法状态：</text>
+            <text>{{item.status}}</text>
+          </view>
+        </view>
+      </view>
+    </checkbox-group>
+  </view>
+  <button class="footerBtn" disabled="{{btnDisabled}}" bindtap="btnTapJump">{{btnText}}</button>
+</block>
+<block wx:if="{{illegalDetails.length==0 && judgeTure}}">
+  <view class="noneIllegal ">
+    <image class="noneImg " src="../../dist/images/illegal-list-notBreak.png "></image>
+    <text>没有违法记录</text>
+  </view>
+</block>

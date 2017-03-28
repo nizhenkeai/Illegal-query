@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/illegal/illegal",
+    "pages/pay/pay",
+    "pages/UnionPay/UnionPay",
+    "pages/success/success",
+    "pages/indent/indent"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "查询缴费",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 20000
+  }
+}

@@ -1,0 +1,26 @@
+/* pages/pay/pay.wxss */
+.payContent{
+    height: 300rpx;
+    background: #fff;
+    padding: 20rpx 5%;
+}
+.payContent view{
+    margin-bottom: 30rpx;
+}
+.price{
+   height: 50rpx;
+   padding:40rpx 10% 40rpx;
+   border-bottom: 1rpx solid #e0e0e0;
+}
+.payWay{
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.payUnionPay{
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #fff;
+}
+.payIcon{
+    margin-top: 25rpx;
+}

@@ -1,0 +1,8 @@
+<!--pages/success/success.wxml-->
+<view class="succHeader bgwhite">
+  <icon type="success" size="85"></icon>
+  <text class="succText">支付成功！</text>
+</view>
+<view class="succNaviga bgwhite">
+ <navigator url="../indent/indent?title=aaaaaaa">查询订单<text class="fr">></text></navigator>
+</view>
